@@ -24,11 +24,15 @@ Our app uses SQLite to manage users and track activities. Before anything else, 
 Run this Python script to create the necessary tables:
 
 from backend.db import init_db
-init_db()  # This will set up everything!
+init_db()  
+
+# This will set up everything!
+
 2. Start the Backend (FastAPI)
 To run the backend (where the logic and data processing happens), use this command:
 
 uvicorn backend.app:app --reload
+
 This will start the backend at http://127.0.0.1:8000.
 
 3. What the Backend Does
@@ -44,6 +48,7 @@ Handling data and running the AI agents
 For the user interface (UI), we’re using Streamlit. To run the frontend, use this command:
 
 streamlit run frontend/app.py
+
 This will open up the web app at http://localhost:8501, where you can interact with everything!
 
 2. What the Frontend Does
@@ -54,6 +59,7 @@ Select stock tickers (companies) to analyze
 See the stock analysis and predictions
 Download detailed reports as PDFs
 Get investment recommendations powered by AI
+
 🛠️ Working with the Database
 
 1. Database Tables
@@ -64,6 +70,7 @@ activity_logs: Tracks user actions (like logins or clicks)
 Make sure these tables are set up! If you’re not sure, you can use SQLite to check:
 
 sqlite3 path_to_your_db.db
+
 Run these queries to see the data:
 
 SELECT * FROM users;
@@ -75,8 +82,10 @@ To run both the backend and frontend at the same time, follow these steps:
 
 Start the backend:
 uvicorn backend.app:app --reload
+
 Start the frontend:
 streamlit run frontend/app.py
+
 Now, you can visit http://localhost:8501 in your browser and interact with the app!
 
 🤝 How to Contribute
