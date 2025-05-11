@@ -1,9 +1,9 @@
-Welcome to the Market Eye AI project! 🎉 
+# Welcome to the Market Eye AI project! 🎉 
 This is where we build a smart AI system to help analyze stock data, predict future stock prices, and generate investment recommendations. 
 All of this will be available in a user-friendly web app powered by Streamlit!
 
 
-🚀 Getting Started
+# 🚀 Getting Started
 
 1. Clone the Repo
 First, let's grab the code from GitHub. Open your terminal and run this:
@@ -16,7 +16,7 @@ We use a requirements.txt file to manage all the Python packages we need. Instal
 
 pip install -r requirements.txt
 
-🔧 Backend Setup
+# 🔧 Backend Setup
 
 1. Set Up the Database
 Our app uses SQLite to manage users and track activities. Before anything else, we need to set up the database.
@@ -26,7 +26,7 @@ Run this Python script to create the necessary tables:
 from backend.db import init_db
 init_db()  
 
-# This will set up everything!
+#This will set up everything!
 
 2. Start the Backend (FastAPI)
 To run the backend (where the logic and data processing happens), use this command:
@@ -42,7 +42,7 @@ User login and authentication
 Logging user activities (like when they sign in or use the app)
 Handling data and running the AI agents
 
-🌐 Frontend Setup
+# 🌐 Frontend Setup
 
 1. Running the Streamlit App
 For the user interface (UI), we’re using Streamlit. To run the frontend, use this command:
@@ -60,7 +60,7 @@ See the stock analysis and predictions
 Download detailed reports as PDFs
 Get investment recommendations powered by AI
 
-🛠️ Working with the Database
+# 🛠️ Working with the Database
 
 1. Database Tables
 The app uses two main tables in the database:
@@ -76,7 +76,7 @@ Run these queries to see the data:
 SELECT * FROM users;
 SELECT * FROM activity_logs;
 
-💻 Running Everything Together
+# 💻 Running Everything Together
 
 To run both the backend and frontend at the same time, follow these steps:
 
@@ -88,12 +88,12 @@ streamlit run frontend/app.py
 
 Now, you can visit http://localhost:8501 in your browser and interact with the app!
 
-🤝 How to Contribute
+# 🤝 How to Contribute
 
 Fork the repository and create your own branch for any changes or new features you want to work on.
 Make sure to commit your changes frequently with clear messages.
 When you’re ready, open a pull request and describe what changes you’ve made. Don’t forget to mention how we can test your updates!
 
-🌟 Helpful Tips
+# 🌟 Helpful Tips
 If you run into any issues or errors, double-check that all the required dependencies are installed. You can find them in requirements.txt.
 Always pull the latest changes from the main branch before starting on any new tasks to avoid conflicts.
