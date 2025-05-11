@@ -10,10 +10,12 @@ First, let's grab the code from GitHub. Open your terminal and run this:
 
 git clone https://github.com/khadijalseiari/market-eye-ai.git
 cd market-eye-ai
+
 2. Install the Dependencies
 We use a requirements.txt file to manage all the Python packages we need. Install them with:
 
 pip install -r requirements.txt
+
 🔧 Backend Setup
 
 1. Set Up the Database
@@ -35,6 +37,7 @@ The backend handles things like:
 User login and authentication
 Logging user activities (like when they sign in or use the app)
 Handling data and running the AI agents
+
 🌐 Frontend Setup
 
 1. Running the Streamlit App
@@ -65,6 +68,7 @@ Run these queries to see the data:
 
 SELECT * FROM users;
 SELECT * FROM activity_logs;
+
 💻 Running Everything Together
 
 To run both the backend and frontend at the same time, follow these steps:
